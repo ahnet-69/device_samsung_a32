@@ -15,10 +15,10 @@ def IncrementalOTA_InstallEnd(info):
   OTA_InstallEnd(info)
   return
 
-def AddImage(info, basename, dest):
+def AddImage(info, basename, dest, zip=True):
   name = basename
   data = info.input_zip.read("IMAGES/" + basename)
-  common.ZipWriteStr(info.output_zip, name, data)
+  if zip: common.ZipWriteStr(info.output_zip, name, data)
   info.script.AppendExtra('package_extract_file("%s", "%s");' % (name, dest))
 
 def OTA_InstallEnd(info):
@@ -27,4 +27,5 @@ def OTA_InstallEnd(info):
   AddImage(info, "vbmeta_system.img", "/dev/block/by-name/vbmeta_system")
   AddImage(info, "vbmeta_vendor.img", "/dev/block/by-name/vbmeta_vendor")
   AddImage(info, "dtbo.img", "/dev/block/by-name/dtbo")
+  AddImage(info, "boot.img", "boot.img", "/dev/block/by-name/boot", zip=False)
   return
