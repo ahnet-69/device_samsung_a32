@@ -10,6 +10,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common evo-x stuff.
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+$(call inherit-product, vendor/evolution/config/BoardConfigSoong.mk)
 
 # Inherit from a32 device
 $(call inherit-product, device/samsung/a32/device.mk)
