@@ -18,6 +18,7 @@ $(call inherit-product, device/samsung/a32/device.mk)
 EVO_BUILD_TYPE := UNOFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1440
 TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_USES_MINI_GAPPS=true
 
 PRODUCT_DEVICE := a32
 PRODUCT_NAME := evolution_a32
