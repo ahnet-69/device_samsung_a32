@@ -155,6 +155,11 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor \
     android.hardware.drm@1.4.vendor
 
+# Dumpstate
+PRODUCT_PACKAGES += \
+    android.hardware.dumpstate@1.0.vendor:64 \
+    android.hardware.dumpstate@1.1.vendor:64
+
 # Protobuf
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-3.9.1-vendorcompat
