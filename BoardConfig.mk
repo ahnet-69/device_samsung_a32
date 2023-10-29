@@ -172,7 +172,6 @@ TARGET_VIBRATOR_SUPPORTS_EFFECTS := true
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
 DEVICE_MATRIX_FILE += $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
-	vendor/evolution/config/device_framework_matrix.xml \
 	$(DEVICE_PATH)/configs/hidl/framework_compatibility_matrix.xml
 
 # VNDK
