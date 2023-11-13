@@ -850,7 +850,6 @@ vendor/lib/egl/libMEOW_qt.so
 vendor/lib/egl/libMEOW_trace.so
 vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
-vendor/lib/hw/memtrack.default.so
 vendor/lib/hw/vendor.mediatek.hardware.mms@1.6-impl.so
 vendor/lib/mt6768/libnir_neon_driver.so
 vendor/lib/libDefaultFpsActor.so
@@ -879,7 +878,6 @@ vendor/lib64/egl/libMEOW_trace.so
 vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib64/hw/hwcomposer.mt6768.so
-vendor/lib64/hw/memtrack.default.so
 vendor/lib64/hw/vendor.mediatek.hardware.mms@1.6-impl.so
 vendor/lib64/mt6768/libnir_neon_driver.so
 vendor/lib64/libDefaultFpsActor.so
@@ -920,8 +918,6 @@ vendor/lib64/liburee_meta_drmkeyinstall.so
 vendor/bin/hw/android.hardware.dumpstate@1.1-service-lazy
 vendor/etc/init/android.hardware.dumpstate@1.1-service-lazy.rc
 vendor/etc/vintf/manifest/android.hardware.dumpstate@1.1-service-lazy.xml
-vendor/lib64/android.hardware.dumpstate@1.0.so
-vendor/lib64/android.hardware.dumpstate@1.1.so
 
 # Fingerprint
 vendor/lib/libbauthserver.so
@@ -1177,7 +1173,6 @@ vendor/etc/init/lights-default-sec.rc
 vendor/etc/vintf/manifest/lights-default-sec.xml
 vendor/lib/hw/lights.mt6768.so
 vendor/lib64/hw/lights.mt6768.so
-vendor/lib64/android.hardware.light@2.0.so
 vendor/lib64/vendor.samsung.hardware.light-V1-ndk_platform.so
 
 # Locale
@@ -1337,6 +1332,8 @@ vendor/lib64/vintf-codecsolution-V2-ndk_platform.so
 
 # Media (Dolby)
 vendor/etc/dolby/dax-default.xml
+vendor/etc/dax3_media_codecs_dolby_audio.xml
+vendor/etc/media_codecs_dolby_audio.xml
 vendor/lib64/libdeccfg.so
 
 # MMAGENT
@@ -1362,7 +1359,6 @@ etc/permissions/com.samsung.android.nfc.rfcontrol.xml
 etc/permissions/com.samsung.android.nfc.t4t.xml
 etc/permissions/com.samsung.android.nfc.t4temul.xml
 etc/permissions/com.sec.feature.nfc_authentication_cover.xml
-etc/libnfc-nci.conf
 etc/nfc_key
 -framework/com.publicnfc.jar
 -framework/com.samsung.android.nfc.mpos.jar
@@ -1415,27 +1411,17 @@ vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
 vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc
 vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc
-vendor/etc/vintf/manifest/power-default.xml
 vendor/etc/powercontable.xml
 vendor/etc/powerscntbl.xml
 vendor/lib/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so
-vendor/lib/libmtkperf_client_vendor.so
 vendor/lib/libpower_timer.so
 vendor/lib/libpowerhal.so
 vendor/lib/libpowerhalwrap_vendor.so
-vendor/lib/vendor.mediatek.hardware.mtkpower@1.0.so
-vendor/lib/vendor.mediatek.hardware.mtkpower@1.1.so
-vendor/lib/vendor.mediatek.hardware.mtkpower@1.2.so
 vendor/lib64/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so
-vendor/lib64/android.hardware.power-service-mediatek.so
-vendor/lib64/libmtkperf_client_vendor.so
 vendor/lib64/libperfctl_vendor.so
 vendor/lib64/libpower_timer.so
 vendor/lib64/libpowerhal.so
 vendor/lib64/libpowerhalwrap_vendor.so
-vendor/lib64/vendor.mediatek.hardware.mtkpower@1.0.so
-vendor/lib64/vendor.mediatek.hardware.mtkpower@1.1.so
-vendor/lib64/vendor.mediatek.hardware.mtkpower@1.2.so
 vendor/lib64/vendor.mediatek.hardware.power@1.1.so
 vendor/lib64/vendor.mediatek.hardware.power@2.0.so
 
@@ -1580,7 +1566,6 @@ vendor/lib64/vendor.samsung.hardware.security.widevine.keyprov@1.0.so
 # Sensors
 vendor/bin/hw/android.hardware.sensors@2.0-service.multihal
 vendor/etc/init/android.hardware.sensors@2.0-service-multihal.rc
-vendor/etc/vintf/manifest/android.hardware.sensors@2.0-multihal.xml
 vendor/lib/sensors.grip.so
 vendor/lib/sensors.inputvirtual.so
 vendor/lib/sensors.sensorhub.so
@@ -1762,10 +1747,8 @@ vendor/bin/factory
 vendor/bin/fsdbg_vendor
 vendor/bin/iod
 vendor/bin/jpegtool
-vendor/bin/loghidlvendorservice
 vendor/bin/md_monitor
 vendor/bin/md_monitor_ctrl
-vendor/bin/meta_tst
 vendor/bin/mrdump_tool
 vendor/bin/mt6660_calibration
 vendor/bin/mtk_pkm_service
@@ -1801,7 +1784,6 @@ vendor/etc/init/init.vendor.rilcommon.rc
 vendor/etc/init/init.vendor.sysfw.rc
 vendor/etc/init/init.wlan_drv.rc
 vendor/etc/init/init.wmt_drv.rc
-vendor/etc/init/loghidlvendorservice.rc
 vendor/etc/init/mtk_pkm_service.rc
 vendor/etc/init/networksetting.rc
 vendor/etc/init/vendor.mediatek.hardware.nwk_opt@1.0-service.rc
@@ -1819,7 +1801,6 @@ vendor/etc/hqm_device.xml
 vendor/etc/mercury.json
 vendor/etc/mtk_omx_core.cfg
 vendor/etc/mtu-conf.xml
-vendor/etc/partition_permission.sh
 vendor/etc/pdpcnt-conf.xml
 vendor/etc/plmn_delta.bin
 vendor/etc/plmn_delta_attaio.bin
@@ -1829,7 +1810,6 @@ vendor/etc/plmn_se13.bin
 vendor/etc/public.libraries.txt
 vendor/etc/somxreg.conf
 vendor/etc/task_profiles.json
-vendor/etc/throttle.sh
 vendor/etc/vramdiskd.xml
 vendor/lib/arm.graphics-V1-ndk_platform.so
 vendor/lib/libMcClient.so
@@ -1956,7 +1936,6 @@ vendor/lib64/vendor.mediatek.hardware.dmc@1.0.so
 vendor/lib64/vendor.mediatek.hardware.dmc@1.1.so
 vendor/lib64/vendor.mediatek.hardware.dmc@1.2.so
 vendor/lib64/vendor.mediatek.hardware.lbs@1.0.so
-vendor/lib64/vendor.mediatek.hardware.log@1.0.so
 vendor/lib64/vendor.mediatek.hardware.meta@1.0.so
 vendor/lib64/vendor.mediatek.hardware.nwk_opt@1.0.so
 vendor/lib64/vendor.samsung.hardware.radio.channel@2.0.so
