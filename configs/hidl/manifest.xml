@@ -66,10 +66,6 @@
         <transport>hwbinder</transport>
         <fqname>@1.0::IMemtrack/default</fqname>
     </hal>
-    <hal format="aidl">
-        <name>android.hardware.power</name>
-        <fqname>IPower/default</fqname>
-    </hal>
     <hal format="hidl">
         <name>android.hardware.radio</name>
         <transport>hwbinder</transport>
