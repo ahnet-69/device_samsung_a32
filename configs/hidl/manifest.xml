@@ -65,6 +65,7 @@
         <name>android.hardware.memtrack</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IMemtrack/default</fqname>
+    </hal>
     <hal format="aidl">
         <name>android.hardware.power</name>
         <fqname>IPower/default</fqname>
