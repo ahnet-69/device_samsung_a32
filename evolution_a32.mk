@@ -15,7 +15,7 @@ $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 $(call inherit-product, device/samsung/a32/device.mk)
 
 EVO_BUILD_TYPE := UNOFFICIAL
-TARGET_BOOT_ANIMATION_RES := 1440
+TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_USES_MINI_GAPPS := true
 
