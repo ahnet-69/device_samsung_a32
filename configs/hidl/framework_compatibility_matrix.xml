@@ -23,6 +23,13 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.cas</name>
+        <interface>
+            <name>IMediaCasService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>android.hardware.drm</name>
         <version>1.0-4</version>
@@ -119,25 +126,23 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
+    <hal format="aidl" optional="true">
         <name>android.hardware.wifi.hostapd</name>
-        <version>1.0-3</version>
         <interface>
             <name>IHostapd</name>
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
+    <hal format="aidl" optional="true">
         <name>android.hardware.wifi.supplicant</name>
-        <version>1.0-4</version>
+        <version>2</version>
         <interface>
             <name>ISupplicant</name>
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
+    <hal format="aidl" optional="true">
         <name>android.hardware.wifi</name>
-        <version>1.0-6</version>
         <interface>
             <name>IWifi</name>
             <instance>default</instance>
